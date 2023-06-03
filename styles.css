@@ -1,7 +1,7 @@
 :root{
     --ocean-green: #47A992;
     --crater-brown: #482121;
-    --lotus: #7A3E3E;
+    /* --lotus: #7A3E3E; */
     --gallery: #EEEEEE;
     --font: 'Kalam', cursive;
 }
@@ -21,11 +21,12 @@ header{
 }
 
 img{
-    max-width: 300px;
+    max-width: 450px;
+    min-height: 600px;
 }
 
 main{
-    padding: 4rem 6rem;
+    padding: 3rem 6rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,11 +76,12 @@ textarea{
 
 footer{
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 0.25rem;
+    font-size: large;
 }
 
-@media only screen and (max-width : 650px){
+@media only screen and (max-width : 750px){
     main{
           display: block;
           padding: 5% 15%;
