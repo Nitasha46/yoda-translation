@@ -1,30 +1,96 @@
-h1{
+:root{
+    --ocean-green: #47A992;
+    --crater-brown: #482121;
+    --lotus: #7A3E3E;
+    --gallery: #EEEEEE;
+    --font: 'Kalam', cursive;
+}
+
+body{
+    margin: 0%;
+    font-family: var(--font);
+    color: var(--crater-brown);
+    background-color: var(--ocean-green);
+}
+
+header{
+    padding: 2rem;
+    border-radius: 0.25rem;
     text-align: center;
+    font-size: 1.5rem;
+}
+
+img{
+    max-width: 300px;
+}
+
+main{
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 textarea{
-    width: 80%;
-    height: 10vh;
-    display: block;
+    background-color: var(--gallery);
+    width: 30vw;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 0.5rem;
     padding: 1rem;
-    margin: 1rem;
+    font-family: var(--font);
+    font-size: larger;
+    resize: none;
+    display: block;
 }
 
 #btn-translate{
     padding: 0.5rem;
     margin: 1rem;
+    color: var(--gallery);
+    font-family: var(--font);
+    border: none;
+    font-size: larger;
+    border-radius: 0.5rem;
+    background-color: var(--crater-brown);
+    display: block;
 }
 
-.guide{
-    font-size: larger;
-    margin: 1rem;
+#btn-translate:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #output{
+    background-color: var(--gallery);
+    width: 30vw;
+    height: 40vh;
     border: 1px solid black;
-    width: 80%;
-    height: 10vh;
-    display: block;
+    border-radius: 0.5rem;
     padding: 1rem;
-    margin: 1rem;
+    font-family: var(--font);
+    font-size: larger;
+    display: block;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width : 650px){
+    main{
+          display: block;
+          padding: 5% 15%;
+          padding-top: 10%;
+    }
+    textarea{
+          width:65vw;
+          height: 35vh;
+    }
+    #output{
+        width:65vw;
+        height: 35vh;
+  }
 }
